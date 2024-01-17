@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>DEMO 27</title>
+        <script>
+            // declaring a array using new keyword
+            let arr= new Array()  // size is optional
+            const n=parseInt(prompt("Enter array size",1))
+            alert("Reading array elements")
+            for(let i=0;i<n;i++)
+            {
+                arr[i]=parseInt(prompt("Enter element "+(i+1)))
+            
+            }
+            document.writeln("Array elements</br>")
+            for(let element of arr)
+            {
+                document.writeln(element)
+            }
+
+
+            const course= new Array("AWS","MSWD","PFSD")   // constructor
+            document.writeln("</br>")
+            document.writeln("Course array length: "+course.length+"</br>")
+            document.writeln("Course type: "+typeof course+"</br>")
+            document.writeln("<u>Course array elements</u></br>")
+            for(let c of course)
+            {
+                document.writeln(c)
+            }
+           
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
